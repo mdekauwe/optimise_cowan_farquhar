@@ -121,5 +121,13 @@ if __name__ == "__main__":
     ax.set_xlabel(r"g$_{\mathrm{s}}$ (mol m$^{-2}$ s$^{-1}$)")
     ax.set_ylabel(r"A - $\lambda$E")
     ax.legend(numpoints=1, ncol=1, frameon=False, loc="best")
+    # Hide the right and top spines
+    ax.spines['right'].set_visible(False)
+    ax.spines['top'].set_visible(False)
+
+    # Only show ticks on the left and bottom spines
+    ax.yaxis.set_ticks_position('left')
+    ax.xaxis.set_ticks_position('bottom')
+
     ofname = "CF_opt.png"
     fig.savefig(ofname, dpi=300, bbox_inches='tight', pad_inches=0.1)
