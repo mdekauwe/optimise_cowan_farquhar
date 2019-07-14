@@ -119,7 +119,7 @@ if __name__ == "__main__":
     ax.yaxis.set_major_locator(MaxNLocator(5))
     ax.xaxis.set_major_locator(MaxNLocator(5))
     ax.set_xlabel(r"g$_{\mathrm{s}}$ (mol m$^{-2}$ s$^{-1}$)")
-    ax.set_ylabel(r"A - $\lambda$E")
+    ax.set_ylabel(r"A $\minus$ $\lambda$E")
     ax.legend(numpoints=1, ncol=1, frameon=False, loc="best")
     # Hide the right and top spines
     ax.spines['right'].set_visible(False)
